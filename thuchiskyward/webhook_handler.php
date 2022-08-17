@@ -1,9 +1,8 @@
 <?php
       // connect database
-  
+	  // https://226b-14-167-140-250.ap.ngrok.io/qlnss/thuchiskyward/webhook_handler.php
 	//GIÁ TIỀN TỔNG CỘNG CỦA ĐƠN HÀNG GIẢ ĐỊNH.
 	$ORDER_MONEY = 100000;
-
 	//Số tiền chuyển thiếu tối đa mà hệ thống vẫn chấp nhận để xác nhận đã thanh toán
 	$ACCEPTABLE_DIFFERENCE = 10000;
 
@@ -87,8 +86,10 @@
 		}
   
   echo "Thanh cong";
-  require_once('config.php');
-  $insert = "INSERT INTO thu_chi(id, tid, description1, amount, cusum_balance, time1, bank_sub_acc_id, subAccId, virtualAccount, virtualAccountName, corresponsiveName, corresponsiveAccount, corresponsiveBankId, corresponsiveBankName, trang_thai) VALUES('$id', '$tid', '$description', '$amount', '$cusum_balance', '$when', '$bank_sub_acc_id', '$subAccId', '$virtualAccount', '$virtualAccountName', '$corresponsiveName', '$corresponsiveAccount', '$corresponsiveBankId', '$corresponsiveBankName', '$trangthai')";  
+  require_once('../config.php');
+  if ($amount<0) $loai="Chi phí";
+  else $loai="Doanh thu";
+  $insert = "INSERT INTO thu_chi(id, tid, loai, description1, amount, cusum_balance, time1, bank_sub_acc_id, subAccId, virtualAccount, virtualAccountName, corresponsiveName, corresponsiveAccount, corresponsiveBankId, corresponsiveBankName, trang_thai) VALUES('$id', '$tid', '$loai', '$description', '$amount', '$cusum_balance', '$when', '$bank_sub_acc_id', '$subAccId', '$virtualAccount', '$virtualAccountName', '$corresponsiveName', '$corresponsiveAccount', '$corresponsiveBankId', '$corresponsiveBankName', '$trangthai')";  
   mysqli_query($conn, $insert);
   die();
 	}

@@ -1,8 +1,7 @@
-<?php 
 
+<?php 
 // connect database
 require_once('../config.php');
-
   	if(isset($_POST["idNhanVien"]) && isset($_POST["soNgayCong"]))
   	{
   		$idNhanVien = $_POST['idNhanVien'];

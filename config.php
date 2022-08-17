@@ -1,6 +1,6 @@
 <?php
 
-	$conn = mysqli_connect("localhost", "root", "", "quanlynhansu");
+	$conn = mysqli_connect("localhost", "root", "", "qlnss");
 
 	if (!$conn) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -9,7 +9,6 @@
 	    exit;
 	}
 
-	
 	// Set timezone 
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
 	// set char set

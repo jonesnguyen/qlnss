@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th8 09, 2022 lúc 07:37 PM
+-- Thời gian đã tạo: Th8 10, 2022 lúc 07:42 PM
 -- Phiên bản máy phục vụ: 10.3.35-MariaDB-log-cll-lve
 -- Phiên bản PHP: 7.4.30
 
@@ -572,7 +572,7 @@ CREATE TABLE `tai_khoan` (
 --
 
 INSERT INTO `tai_khoan` (`id`, `ho`, `ten`, `hinh_anh`, `email`, `mat_khau`, `so_dt`, `quyen`, `trang_thai`, `truy_cap`, `ngay_tao`, `ngay_sua`) VALUES
-(1, 'Phạm', 'Trung Dũng', 'admin.png', 'admin@gmail.com', '202cb962ac59075b964b07152d234b70', '099999999999', 1, 1, 48, '2019-09-12 00:00:00', '2022-08-06 15:47:25'),
+(1, 'Phạm', 'Trung Dũng', 'admin.png', 'admin@gmail.com', '202cb962ac59075b964b07152d234b70', '099999999999', 1, 1, 50, '2019-09-12 00:00:00', '2022-08-06 15:47:25'),
 (2, 'Thái', 'Mỹ Tiên', '1568644813.jpg', 'ruakundor@gmail.com', '202cb962ac59075b964b07152d234b70', '099999999999', 1, 1, 19, '2019-09-16 21:15:00', '2019-09-20 18:07:30'),
 (3, 'Nguyễn', 'Thị Bích Ngọc', '1568647601.jpg', 'thienhoang97@gmail.com', '202cb962ac59075b964b07152d234b70', '0932312994', 0, 1, 2, '2019-09-16 22:08:30', '2019-09-19 08:37:05'),
 (11, 'Test', 'Test', '1568856833.jpg', 'test@gmail.com', '202cb962ac59075b964b07152d234b70', '1234567890', 0, 1, 5, '2019-09-19 08:09:19', '2019-09-19 08:45:36'),
