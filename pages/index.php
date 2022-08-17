@@ -87,64 +87,6 @@ if (isset($_SESSION['username']) && isset($_SESSION['level'])) {
 		<section class="content">
 			<!-- Small boxes (Stat box) -->
 			<div class="row">
-				<div class="col-lg-3 col-xs-6">
-					<!-- small box -->
-					<div class="small-box bg-aqua">
-						<div class="inner">
-							<h3><?php echo $tongNV; ?></h3>
-
-							<p>Nhân viên</p>
-						</div>
-						<div class="icon">
-							<i class="fa fa-user"></i>
-						</div>
-						<a href="danh-sach-nhan-vien.php?p=staff&a=list-staff" class="small-box-footer">Danh sách nhân viên <i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<!-- ./col -->
-				<div class="col-lg-3 col-xs-6">
-					<!-- small box -->
-					<div class="small-box bg-orange">
-						<div class="inner">
-							<h3><?php echo $tongPB; ?></h3>
-
-							<p>Phòng ban</p>
-						</div>
-						<div class="icon">
-							<i class="fa fa-bank"></i>
-						</div>
-						<a href="phong-ban.php?p=staff&a=room" class="small-box-footer">Danh sách phòng ban <i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<!-- ./col -->
-				<div class="col-lg-3 col-xs-6">
-					<!-- small box -->
-					<div class="small-box bg-yellow">
-						<div class="inner">
-							<h3><?php echo $tongTK; ?></h3>
-
-							<p>Tài khoản người dùng</p>
-						</div>
-						<div class="icon">
-							<i class="ion ion-person-add"></i>
-						</div>
-						<a href="ds-tai-khoan.php?p=account&a=list-account" class="small-box-footer">Danh sách tài khoản <i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<!-- ./col -->
-				<div class="col-lg-3 col-xs-6">
-					<!-- small box -->
-					<div class="small-box bg-red">
-						<div class="inner">
-							<h3><?php echo $tongNghiViec; ?></h3>
-							<p>Nhân viên nghỉ việc</p>
-						</div>
-						<div class="icon">
-							<i class="ion ion-pie-graph"></i>
-						</div>
-						<a href="#" class="small-box-footer" onclick="return false;">Danh sách nghỉ việc <i class="fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
 				<!-- ./col -->
 				<div class="col-lg-3 col-xs-6">
 					<!-- small box -->

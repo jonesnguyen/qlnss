@@ -64,7 +64,7 @@
     var Loai = $('#loai').val();
      //$('#danhsachgd').html('');
        // kiem tra rong
-       if (stDay != '' && enDay != '') {
+       if (taiKhoan!='' && stDay != '' && enDay != '') {
         $.ajax({
         url: "ajaxgd.php",
         method: "POST",
@@ -75,7 +75,7 @@
           loai:Loai
         },
         success: function (data, status, xhr) {
-          $('#noidungGD').html(data);
+          $('#danhsachgd').html(data);
     },
     error: function (jqXhr, textStatus, errorMessage) {
             $('#noidungGD').html('Error' + errorMessage);
